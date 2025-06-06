@@ -4,9 +4,8 @@ from sqlalchemy.ext.asyncio import AsyncSession
 from starlette import status
 from starlette.exceptions import HTTPException
 
-from db.books.model_books import Book
-from db.books.queries import build_book_list_query
-from helpers.queries import print_explain_analyze
+from db.model_books import Book
+from services.books.queries import build_book_list_query
 from schemas.base import PaginationCursor, PaginatedListResponse
 from schemas.books import BookCreateRequest, BookResponse, BookListQueryParams
 

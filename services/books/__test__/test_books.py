@@ -4,7 +4,7 @@ from starlette import status
 from starlette.testclient import TestClient
 
 from conftest import SORTED_BOOKS_COUNT, bulk_create_books, create_fake_book_data
-from db.books.model_books import Book
+from db.model_books import Book
 from schemas.books import BookListQueryParams
 from schemas.for_tests import BookTESTBulkCreateUpdateField
 

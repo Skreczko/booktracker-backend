@@ -1,6 +1,6 @@
 from sqlalchemy import Select, select
 
-from db.books.model_books import Book
+from db.model_books import Book
 
 
 def build_book_list_query(

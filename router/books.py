@@ -5,7 +5,7 @@ from starlette import status
 from db.database import get_async_db
 from schemas.base import PaginatedListResponse
 from schemas.books import BookCreateRequest, BookResponse, BookListQueryParams
-from db.books import books as db_books
+from services.books import service
 
 router = APIRouter(
     prefix="/book",
@@ -23,7 +23,7 @@ async def create_book(
     request_data: BookCreateRequest,
     async_db: AsyncSession = Depends(get_async_db),
 ) -> None:
-    return await db_books.create_book(request_data=request_data, async_db=async_db)
+    return await service.create_book(request_data=request_data, async_db=async_db)
 
 
 @router.get(
@@ -37,4 +37,4 @@ async def get_book_list(
     query_params: BookListQueryParams = Depends(),
     async_db: AsyncSession = Depends(get_async_db),
 ) -> PaginatedListResponse[BookResponse]:
-    return await db_books.get_book_list(query_params=query_params, async_db=async_db)
+    return await service.get_book_list(query_params=query_params, async_db=async_db)

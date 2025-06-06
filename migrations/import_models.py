@@ -1,1 +1,1 @@
-from db.books.model_books import Book
+from db.model_books import Book

@@ -8,7 +8,7 @@ from fastapi.testclient import TestClient
 from sqlalchemy.ext.asyncio import AsyncSession, create_async_engine, async_sessionmaker
 from sqlalchemy.pool import StaticPool
 
-from db.books.model_books import Book
+from db.model_books import Book
 from db.database import Base, get_async_db
 from main import app
 from schemas.books import BookCreateRequest

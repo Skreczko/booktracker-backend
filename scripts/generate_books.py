@@ -4,7 +4,7 @@ from faker import Faker
 from sqlalchemy import insert
 from tqdm import tqdm  # type: ignore
 
-from db.books.model_books import Book
+from db.model_books import Book
 from db.database import SessionLocal
 
 fake = Faker()
