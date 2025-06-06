@@ -1,0 +1,40 @@
+-r base.txt
+
+Faker==37.3.0
+tqdm==4.67.1
+
+click>=8.0,<9.0
+flake8-bugbear==21.3.2
+flake8-django==1.1.1
+flake8==3.9.0
+pep8-naming==0.11.1
+
+
+# Linting
+black==23.7.0
+autoflake==1.4
+bandit==1.7.0
+ruff==0.0.252
+
+# Type-checking
+# sqlalchemy-stubs==0.4
+mypy==1.11.2
+sqlalchemy[mypy]
+types-Deprecated==1.2.15.20250304
+types-Markdown==3.3.0
+types-beautifulsoup4==4.10.4
+types-passlib==1.7.7.13
+types-python-dateutil==2.9.0.20241206
+types-python-jose==3.3.4.8
+types-pytz==2024.2.0.20241003
+types-requests==2.31.0.10
+types-sqlalchemy-utils==1.0.1
+
+# Testing
+coverage==7.3.2
+freezegun==1.2.2
+pytest-cov==4.0.0
+pytest-xdist==3.2.1
+pytest==8.4.0
+pytest-asyncio==1.0.0
+aiosqlite==0.21.0

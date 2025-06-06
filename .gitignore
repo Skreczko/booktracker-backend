@@ -1,0 +1,13 @@
+*.pyc
+/.idea/
+.env
+
+/containers_data/
+/.ruff_cache/
+/.mypy_cache/
+/redis.conf
+/celerybeat-schedule
+/flower
+/video_conferencing/google_credentials.json
+/video_conferencing/token.json
+/temp/
